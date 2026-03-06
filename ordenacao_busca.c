@@ -11,13 +11,13 @@ int le_tamanho_vetor () {
 
 void le_vetor (int *v, int tamanho){
     for (int i=0; i<tamanho; i++){
-        printf ("Digite o valor da %da posicao: ", i+1);
+        printf ("digite o valor da %da posicao: ", i+1);
         scanf ("%d", &v[i]);
     }
 } 
 
 void mostra_vetor (int *v, int tamanho) {
-    printf ("\nVeja seu vetor:\n");
+    printf ("\nveja seu vetor:\n");
     for (int i=0; i<tamanho; i++) {
         printf("%d ", v[i]);
     }
@@ -26,7 +26,7 @@ void mostra_vetor (int *v, int tamanho) {
 
 void preenche_vetor (int *v, int tamanho) {
     for (int i=0; i<tamanho; i++) {
-        v[i] =  rand();
+        v[i] =  rand() % (tamanho * 10);
     }
 }
 
@@ -40,5 +40,3 @@ int main () {
     
     return 0;
 }
-
-
